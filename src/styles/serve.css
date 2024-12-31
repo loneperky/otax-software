@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overview{
+  padding: 3rem 4rem;
+}
+
+.com1 img{
+width: 40rem;
+border-radius: 0.5rem;
+}
+.special-talk .com1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.service{
+  padding: 0.7rem 0;
+}
+.intro{
+  margin-top: 3rem ;
+}
+
+.com1 h1{
+  color: green;
+  font-weight: 800;
+  padding: 2rem 0;
+}
+
+
+
+.specialty {
+font-weight: 400;
+line-clamp: 10rem;
+}
+
+.team{
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.team h3{
+  padding: 0.5rem 0;
+}
+
+.team img{
+  width: 40rem;
+  border-radius: 0.5rem;
+}
+
+.team li{
+  list-style-type: none;
+  line-height: 1.9rem;
+}
+
+@media screen and (max-width:900px) {
+  .com1{
+    flex-direction: column;
+  }
+  .team{
+    flex-direction: column;
+  }
+  .com1 img{
+    width: 100%;
+  }
+
+  .team img{
+    width: 100%;
+  }
+  .overview{
+    padding: 1rem;
+  }
+  .com1 h1{
+    padding: 1rem 0;
+    text-align: center;
+
+  }
+  .team {
+    padding: 2rem 0;
+  }
+}
