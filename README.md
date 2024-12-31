@@ -1,8 +1,10 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official website code repository of otax-software developed by the CTO Otasowie Christian.
 
-Currently, two official plugins are available:
+The Website is developed using react and Vite and if you want to see the full web site simply clone the repo and the command.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* npm run dev 
+
+it will open at localhost:5173 
+
