@@ -32,7 +32,7 @@ function AboutPage() {
         </div>
 
         <div className="weare">
-          <img src="./Images/wedo.jpg" alt="" />
+          <img src="/Images/wedo.jpg" alt="" />
 
           <div className="abso">
             <p className="who">WHO WE ARE</p>

@@ -75,12 +75,12 @@ function ContactPage(){
             <li><NavLink>Terms & condition</NavLink></li>
             </div>
             <div className="follow">
-              <NavLink  ><img src="./Images/whatsapp.png" alt="" />
+              <NavLink  ><img src="/Images/whatsapp.png" alt="" />
               </NavLink>
                <Link >
-                <img src="./Images/whatsapp.png" alt="" />
+                <img src="/Images/whatsapp.png" alt="" />
                 </Link>
-             <img src="./Images/whatsapp.png" alt="" />
+             <img src="/Images/whatsapp.png" alt="" />
             </div>
                 </div>
                 <p>Copyrights &copy; 2024 OTAXY. Buld by Chris Tech</p>

@@ -42,13 +42,13 @@ function HomePage() {
         </div>
 
         <div className="hero-img">
-          <img src="./Images/01(2).jpg" alt="" />
+          <img src="/Images/01(2).jpg" alt="" />
         </div>
       </div>
 
       <div className="combine-section1">
         <div className="pic-slide">
-          <img src="./Images/02(3).jpg" alt="" />
+          <img src="/Images/02(3).jpg" alt="" />
           <div className="count-imgg">
             <div className="count">
               <div className="ten">
@@ -66,7 +66,7 @@ function HomePage() {
                 </p>
               </div>
             </div>
-            <img src="./Images/01(3).jpg" alt="" />
+            <img src="/Images/01(3).jpg" alt="" />
           </div>
         </div>
 
@@ -147,7 +147,7 @@ function HomePage() {
                 qualify website and customer satisfaction.
               </p>
               <div className="img-name">
-                <img src="./Images/01(4).jpg" alt="" />
+                <img src="/Images/01(4).jpg" alt="" />
                 <p>By Nick Mac</p>
               </div>
             </div>
@@ -157,7 +157,7 @@ function HomePage() {
                 qualify website and customer satisfaction.
               </p>
               <div className="img-name">
-                <img src="./Images/06.jpg" alt="" />
+                <img src="/Images/06.jpg" alt="" />
                 <p>By Nick Mac</p>
               </div>
             </div>
@@ -167,7 +167,7 @@ function HomePage() {
                 qualify website and customer satisfaction.
               </p>
               <div className="img-name">
-                <img src="./Images/09.jpg" alt="" />
+                <img src="/Images/09.jpg" alt="" />
                 <p>By Nick Mac</p>
               </div>
             </div>
@@ -177,7 +177,7 @@ function HomePage() {
                 qualify website and customer satisfaction.
               </p>
               <div className="img-name">
-                <img src="./Images/05.jpg" alt="" />
+                <img src="/Images/05.jpg" alt="" />
                 {/* <p>By Megan Ruth</p> */}
               </div>
             </div>
@@ -185,7 +185,7 @@ function HomePage() {
         </div>
 
         <div className="testimony-hero">
-          <img src="./Images/03(2).jpg" alt="" />
+          <img src="/Images/03(2).jpg" alt="" />
         </div>
       </div>
 
@@ -254,14 +254,14 @@ function HomePage() {
           </div>
           <div className="follow">
             <NavLink>
-              <img src="./Images/whatsapp.png" alt="" />
+              <img src="/Images/whatsapp.png" alt="" />
             </NavLink>
             <Link>
               {" "}
-              <img src="./Images/whatsapp.png" alt="" />
+              <img src="/Images/whatsapp.png" alt="" />
             </Link>
 
-            <img src="./Images/whatsapp.png" alt="" />
+            <img src="/Images/whatsapp.png" alt="" />
           </div>
         </div>
         <p>Copyrights &copy; 2024 OTAXY. Buld by Chris Tech</p>
