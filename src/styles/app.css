@@ -165,7 +165,7 @@ background-color: green;
 /*........................................................*/
 
 .expertise{
-  background-image: url(../Images/meetings-bg.jpg);
+  background-image: url(..//Images/meetings-bg.jpg);
   background-attachment: fixed;
   color: #dfdfdf;
   padding-top: 5rem;
@@ -329,7 +329,7 @@ padding: 1rem 0;
 }
 
 footer{
-  background-image: url(../Images/meetings-bg.jpg);
+  background-image: url(..//Images/meetings-bg.jpg);
   padding: 5rem;
   padding-bottom: 1.5rem;
 color: #fff;
