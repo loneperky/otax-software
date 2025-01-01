@@ -23,7 +23,7 @@ function ServicePage(){
             <p className="service">We also train individuals who are interested in becoming a web developer, software development, iOs and Android app developer our team of hard working and expert in top cutting edge technologies will be more than glad to impact the knowledge thay have to those who are interested.</p>
           </div>
          
-          <img src="./src/Images/coding.jpg" alt="" />
+          <img src="./Images/coding.jpg" alt="" />
         </div>
 
        <div className="team">
@@ -47,7 +47,7 @@ function ServicePage(){
               <li>BOOSTRAP</li>
             </ul>
           </div>
-         <img src="./src/Images/idelcomp.jpg" alt="" />
+         <img src="./Images/idelcomp.jpg" alt="" />
         </div>
        </div>
       </div>
@@ -97,12 +97,12 @@ function ServicePage(){
             <li><NavLink>Terms & condition</NavLink></li>
             </div>
             <div className="follow">
-              <NavLink  ><img src="./src/Images/whatsapp.png" alt="" />
+              <NavLink  ><img src="./Images/whatsapp.png" alt="" />
               </NavLink>
                <Link >
-                <img src="./src/Images/whatsapp.png" alt="" />
+                <img src="./Images/whatsapp.png" alt="" />
                 </Link>
-             <img src="./src/Images/whatsapp.png" alt="" />
+             <img src="./Images/whatsapp.png" alt="" />
             </div>
                 </div>
                 <p>Copyrights &copy; 2024 OTAXY. Buld by Chris Tech</p>
