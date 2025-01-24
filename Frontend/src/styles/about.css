@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hoab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hoab h3 a{
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.abo h1{
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.weare{
+  display: flex;
+  gap: 2rem;
+  padding: 5rem;
+  padding-right: 7rem;
+  align-items: center;
+ 
+}
+
+.weare p{
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+.weare img{
+  width: 27rem;
+  border-radius: 0.5rem;
+}
+
+.abso .who{
+  color: green;
+}
+.abso h3{
+  font-size: 2.3em;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.one .num{
+font-size: 2em;
+color: rgb(255, 0, 0);
+}
+
+.one{
+color: gray;
+font-weight: 700;
+}
+
+.awe{
+  text-align: center;
+}
+
+.awe p{
+  padding: 1rem;
+  color: red;
+}
+
+.awe h1{
+  color: rgb(0, 0, 92);
+  padding-bottom: 1rem;
+}
+
+.choose{
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  box-shadow: 4px 5px 6px  rgba(166, 166, 166, 0.166);
+  margin: 1rem;
+  border: 1px solid rgba(187, 187, 187, 0.353);
+  line-height: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.choose h2{
+  font-size: 1.2rem;
+}
+
+.choose p{
+  color: gray;
+}
+
+.why-details{
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .why-details{
+    flex-direction: column;
+  }
+  .weare img{
+    width: 100%;
+  }
+  .weare{
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .weare img{
+    width: 100%;
+  }
+  .why-details{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overviews{
+  padding: 4rem;
+}
+
+.head{
+  padding: 1rem 0;
+}
+
+
+.today{
+  background-color: rgba(128, 128, 128, 0.326);
+  width: fit-content;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.title h1{
+  color: green;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.us{
+  padding: 2rem 0;
+}
+
+.us h3{
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.us p{
+  color: gray;
+  font-size: 0.8em;
+}
+
+.info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.info li{
+  list-style-type: none;
+}
+
+.num1{
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.send-details h2{
+  padding: 1rem 0;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  color: rgb(3, 163, 3);
+}
+
+form input{
+  width: 18rem;
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+ border: 1px solid black;
+}
+
+textarea{
+  width: 18rem;
+  height: 8rem;
+  border: 1px solid black;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+form button{
+  height: 2.2rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.2rem 1.5rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+
+@media screen and (max-width:900px) {
+  .info{
+    flex-direction: column;
+  }
+  .overviews{
+    padding: 1rem;
+  }
+}

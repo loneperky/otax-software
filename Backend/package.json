@@ -1,0 +1,16 @@
+{
+  "name": "otax",
+  "version": "1.0.0",
+  "description": "Creating a backend for my portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chrysten",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
