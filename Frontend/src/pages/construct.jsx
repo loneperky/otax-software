@@ -7,7 +7,7 @@ function Product(props){
      <h2>{props.head}</h2>
       <p>{props.talk}</p>
      
-      <p className="know"><NavLink>Know more</NavLink></p>
+      <p className="know"><NavLink to="">Know more</NavLink></p>
     </div>
     </>
   )

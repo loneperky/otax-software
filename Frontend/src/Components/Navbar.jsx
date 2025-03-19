@@ -36,16 +36,18 @@ function Navbar(){
             <div className="quote">
                <button className='quote'>Request A Quote </button>
             </div>
+           
           <div className="menu" onClick={Menu}>
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
-          </div>        
+          </div>
+                
     </nav>
        { Show && (
             <div className="dropdown">
              <ul>
-               <li>
+               <li className='li'>
                 <Link to="/" onClick={Menu}>HOME</Link>
                </li>
        

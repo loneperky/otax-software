@@ -3,103 +3,124 @@
   padding: 0;
   box-sizing: border-box;
 }
+.overall{
+  padding: 2rem 5em;
+  background-image: url('/Images/ellipse.png');
+  background-position: center;
 
-.overviews{
-  padding: 4rem;
 }
 
-.head{
-  padding: 1rem 0;
+body{
+  font-family: sans-serif;
+}
+
+.head h1{
+  color: rgb(0, 0, 88);
+  text-align: center;
 }
 
 
-.today{
-  background-color: rgba(128, 128, 128, 0.326);
-  width: fit-content;
-  padding: 0.35rem 0.6rem;
+
+.contact-detal{
+ background-color: rgb(255, 255, 255);
+ padding: 2rem 5rem;
+ border-radius: 2rem;
+ display: flex;
+ align-items: center ;
+ gap: 10rem;
+}
+.contd{
+  border: 2px solid lightgray;
+  padding: 0.5rem;
+  margin: 1rem 0;
   border-radius: 0.5rem;
-}
+  width: 14rem;
+  height: 12rem;
 
-.title h1{
-  color: green;
-  font-size: 2.5em;
+}
+.contd h3{
+  font-size: 1em;
   font-weight: 900;
+  padding-top: 1.5rem;
+  padding-bottom: 0.3rem;
 }
-
-.us{
-  padding: 2rem 0;
-}
-
-.us h3{
-  font-weight: 900;
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-}
-
-.us p{
-  color: gray;
+.contd p{
   font-size: 0.8em;
+  font-weight: 900;
+  color: gray;
 }
 
-.info{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-}
-.info li{
-  list-style-type: none;
-}
-
-.num1{
+.container1,.container2{
   display: flex;
   gap: 0.5rem;
-  margin: 2rem 0;
+  color: rgb(0, 0, 70);
 }
 
-.send-details h2{
-  padding: 1rem 0;
-  font-weight: 800;
-  letter-spacing: 0.2rem;
-  color: rgb(3, 163, 3);
+.contd a{
+  font-size: 1em;
+  padding-bottom: 10rem;
+  color: rgb(0, 0, 103);
 }
 
-form input{
-  width: 18rem;
-  height: 2.2rem;
-  margin-bottom: 1rem;
-  outline: none;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
- border: 1px solid black;
-}
-
-textarea{
-  width: 18rem;
-  height: 8rem;
-  border: 1px solid black;
-  outline: none;
-  padding: 0.5rem;
+.log{
+  border: 1px solid lightgray;
+  width: fit-content;
+  padding: 0.2rem 0.3rem;
   border-radius: 0.3rem;
 }
 
-form button{
-  height: 2.2rem;
-  background-color: white;
-  border: 1px solid black;
-  padding: 0.2rem 1.5rem;
-  border-radius: 0.3rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  outline: none;
+.con-hero1 button{
+  background-color: rgba(173, 216, 230, 0.455);
+  color: darkblue;
+  border-radius: 0.4rem;
+  border: none;
+  font-weight: bolder;
+  margin: 1rem 0;
 }
 
+.con-hero1 h1{
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+.con-hero1 p{
+  font-size: 1em;
+  font-weight: bolder;
+  padding: 1.5rem 0;
+}
+
+.logg,.contd a{
+  display: flex;
+  gap: 1rem;
+  padding: 2.5em 0;
+  text-decoration: underline;
+}
 
 @media screen and (max-width:900px) {
-  .info{
+  .contact-detal{
     flex-direction: column;
+    padding: 0rem;
+    gap: 1rem;
+    align-items: flex-start;
   }
-  .overviews{
+}
+
+@media screen and (max-width:900px) {
+  .contact-detal{
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .overall{
     padding: 1rem;
+  }
+  .container1,.container2{
+    flex-wrap: wrap;
+  }
+
+  .contd{
+    width: 100%;
+    box-shadow: 3px 3px 4px 0.5px rgba(146, 146, 146, 0.155);
   }
 }

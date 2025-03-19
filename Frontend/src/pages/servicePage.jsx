@@ -1,9 +1,7 @@
-import Product from "../pages/construct";
+import Product from "./construct";
 import "../styles/serve.css";
 import { NavLink, Link } from "react-router-dom";
-import {FaFacebook} from 'react-icons/fa'
-import {FaDiscord} from 'react-icons/fa'
-import {FaApple} from 'react-icons/fa'
+import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
 
 function ServicePage() {
   return (
@@ -118,65 +116,26 @@ function ServicePage() {
       </div>
 
       <hr />
+       
       <footer>
-        <div className="combine-foot">
-          <div className="Otax">
-            <h1> OTAX TECH </h1>
-            <p className="our">
-              Our altimate goal is to provide customers with <br /> the ultimate
-              satisfaction they deserve and giving them <br /> a nice value for
-              their money.
-            </p>
-          </div>
-          <div className="quick">
-            <h2>Quick links</h2>
-            <li>
-              <NavLink>Services</NavLink>
-            </li>
-            <li>
-              <NavLink>Contact us</NavLink>
-            </li>
-            <li>
-              <NavLink>Careers</NavLink>
-            </li>
-            <li>
-              <NavLink>Become a partner</NavLink>
-            </li>
-          </div>
-          <div className="community">
-            <h2>Documents</h2>
-            <li>
-              <NavLink>Supports</NavLink>
-            </li>
-            <li>
-              <NavLink>Faqs</NavLink>
-            </li>
-            <li>
-              <NavLink>Privacy Policy</NavLink>
-            </li>
-            <li>
-              <NavLink>Terms & condition</NavLink>
-            </li>
-          </div>
-          <div className="follow">
-                     <Link href="">
-                       <FaFacebook  style={{color:'white'}}/>
-                     </Link>
-                     
-                     <Link href="">
-                       <FaApple style={{color:'white'}} />
-                     </Link>
-         
-                     <Link href="">
-                       <FaDiscord style={{color:'white'}}/>  
-                     </Link>
-         
-                     
-                   </div>
+        <div className="follow">
+          <div className="social">
+            <a href="https://www.facebook.com/profile.php?id=61573047594370">
+            <FaFacebook style={{width:"",fill:"",color:"",border:"blue"}}/>
+            </a>
+          <a href="https://www.linkedin.com/in/christian-otasowie-074820355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <FaLinkedinIn style={{width:"",fill:"lightblue",color:"white"}}/>
+          </a>
+
+        <a href="https://x.com/xristen_ot?t=TnsVUcJcgQSPk5vp_EvSIw&s=09">
+          <FaTwitter style={{width:"",fill:"lightblue",color:"white"}}/>
+        </a>
+
         </div>
-        <p>Copyrights &copy; 2024 OTAXY. Buld by Chris Tech</p>
-      </footer>
-    </>
+        </div>
+        
+        <p>Copyrights &copy; 2025 OTAXY. Buld by Chris Tech</p>
+      </footer>   </>
   );
 }
 

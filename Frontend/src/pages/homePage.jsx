@@ -2,19 +2,25 @@ import Product from "./construct";
 import { Test } from "./construct";
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useId, useState } from "react";
-import {FaFacebook} from 'react-icons/fa'
-import {FaDiscord} from 'react-icons/fa'
-import {FaApple} from 'react-icons/fa'
+import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
+
 import "../styles/app.css";
 
 function HomePage() {
   const [myWork, setWork] = useState("Web Design");
+  const [email,setEmail] = useState("")
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[]);
 
   return (
     <>
       {/* <div className="quote-coll">
         <p className="qu">Welc ome to Otax technologies</p>
       </div> */}
+
+
 
       <div className="first-page">
         <div className="hero-section1">
@@ -28,15 +34,13 @@ function HomePage() {
           </div>
 
           <div className="hero-sect2">
-            <p>
-              From concept to execution, we deliver web designs that make an
-              impact let your brand shine with our innovative and visually
-              stunning websites.
-            </p>
+           
             <div className="collect">
               <input
                 type="email"
                 className="email"
+                value={email}
+                onChange={(e)=> setEmail(e.target.value)}
                 placeholder="Enter your email address"
               />
               <button className="btn">Message Us</button>
@@ -143,48 +147,6 @@ function HomePage() {
             <h1>See how we've helped our clients succeed</h1>
             <h3>More than 1500+ agencies using OTAXY</h3>
           </div>
-          <div className="testimonial">
-            {/* <div className="test1">
-              <p>
-                I highly recommend OTAX_TECH to anyone looking for highly
-                qualify website and customer satisfaction.
-              </p>
-              <div className="img-name">
-                <img src="/Images/01(4).jpg" alt="" />
-                <p>By Nick Mac</p>
-              </div>
-            </div> */}
-            {/* <div className="test2">
-              <p>
-                I highly recommend OTAX_TECH to anyone looking for highly
-                qualify website and customer satisfaction.
-              </p>
-              <div className="img-name">
-                <img src="/Images/06.jpg" alt="" />
-                <p>By Nick Mac</p>
-              </div>
-            </div> */}
-            {/* <div className="test3">
-              <p>
-                I highly recommend OTAX_TECH to anyone looking for highly
-                qualify website and customer satisfaction.
-              </p>
-              <div className="img-name">
-                <img src="/Images/09.jpg" alt="" />
-                <p>By Nick Mac</p>
-              </div>
-            </div> */}
-            {/* <div className="test4">
-              <p>
-                I highly recommend OTAX_TECH to anyone looking for highly
-                qualify website and customer satisfaction.
-              </p>
-              <div className="img-name">
-                <img src="/Images/05.jpg" alt="" />
-                <p>By Megan Ruth</p>
-              </div>
-            </div> */}
-          </div>
         </div>
 
         <div className="testimony-hero">
@@ -203,14 +165,14 @@ function HomePage() {
               className=""
               placeholder="Your email address"
             />
-            <button className="">Subscribe</button>
+            <button className="">Message Us</button>
           </div>
         </div>
 
-        <ul>
+        <ul className="numb">
           <li>Call on: 09126785031 </li>
           <li>Time: 9am to 5pm (Sunday close)</li>
-          <li>Email: info@Otax.com</li>
+          <li>Email: christianotasowie575@gmail.com</li>
         </ul>
       </div>
 </div>
@@ -218,62 +180,23 @@ function HomePage() {
 
 
       <footer>
-        <div className="combine-foot">
-          <div className="Otax">
-            <h1> OTAX TECH </h1>
-            <p className="our">
-              Our altimate goal is to provide customers with <br /> the ultimate
-              satisfaction they deserve and giving them <br /> a nice value for
-              their money.
-            </p>
-          </div>
-          <div className="quick">
-            <h2>Quick links</h2>
-            <li>
-              <NavLink to="/about">About us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact us</NavLink>
-            </li>
-            <li>
-              <NavLink>Careers</NavLink>
-            </li>
-            <li>
-              <NavLink >Become a partner</NavLink>
-            </li>
-          </div>
-          <div className="community">
-            <h2>Documents</h2>
-            <li>
-              <NavLink>Supports</NavLink>
-            </li>
-            <li>
-              <NavLink>Faqs</NavLink>
-            </li>
-            <li>
-              <NavLink>Privacy Policy</NavLink>
-            </li>
-            <li>
-              <NavLink>Terms & condition</NavLink>
-            </li>
-          </div>
-          <div className="follow">
-            <Link href="">
-              <FaFacebook  style={{color:'white'}}/>
-            </Link>
-            
-            <Link href="">
-              <FaApple style={{color:'white'}} />
-            </Link>
+        <div className="follow">
+          <div className="social">
+            <a href="https://www.facebook.com/profile.php?id=61573047594370">
+            <FaFacebook style={{width:"",fill:"",color:"",border:"blue"}}/>
+            </a>
+          <a href="https://www.linkedin.com/in/christian-otasowie-074820355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <FaLinkedinIn style={{width:"",fill:"lightblue",color:"white"}}/>
+          </a>
 
-            <Link href="">
-              <FaDiscord style={{color:'white'}}/>  
-            </Link>
+        <a href="https://x.com/xristen_ot?t=TnsVUcJcgQSPk5vp_EvSIw&s=09">
+          <FaTwitter style={{width:"",fill:"lightblue",color:"white"}}/>
+        </a>
 
-            
-          </div>
         </div>
-        <p>Copyrights &copy; 2024 OTAXY. Buld by Chris Tech</p>
+        </div>
+        
+        <p>Copyrights &copy; 2025 OTAXY. Buld by Chris Tech</p>
       </footer>
     </>
   );

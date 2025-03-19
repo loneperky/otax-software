@@ -9,6 +9,26 @@ html{
   scroll-behavior: smooth;
   scrollbar-color: blue;
 }
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust width */
+}
+
+/* Background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: blue; /* Darker gray */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Even darker */
+}
 
 .quote-coll{
   box-shadow: 3px 2px 4px rgba(128, 128, 128, 0.127);
@@ -39,10 +59,10 @@ html{
 
 .hero-sect1{
   color: green;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 900;
   padding: 1.5rem 0;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 .hero-sect1 .change{
   color: black;
@@ -58,7 +78,7 @@ html{
   display: block;
   padding-right: 3rem;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .btn{
@@ -149,9 +169,11 @@ background-color: green;
 .btn2{
   padding: 0.6rem 1rem;
   background-color: #2a2a2a;
-  color: #eee;
-  border-radius: 0.3rem;
+  color: #fff;
   font-size: 1em;
+}
+.btn2:hover{
+  box-shadow: 2px 7px 7px  rgba(0, 2, 16, 0.224);
 }
 
 .combine-section1{
@@ -165,7 +187,7 @@ background-color: green;
 /*........................................................*/
 
 .expertise{
-  background-image: url(..//Images/meetings-bg.jpg);
+  background-image: url("/Images/meetings-bg.jpg");
   background-attachment: fixed;
   color: #dfdfdf;
   padding-top: 5rem;
@@ -199,6 +221,10 @@ background-color: green;
   position: relative;
 
 }
+footer{
+  text-align: center;
+}
+
 
 @keyframes moving-right{
   0%{
@@ -283,6 +309,9 @@ padding: 1rem 0;
 .img-name p{
   padding-left: 0.5rem;
 }
+.news{
+  padding: 1rem;
+}
 
 .news h1{
   padding: 1rem 0;
@@ -304,7 +333,7 @@ padding: 1rem 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
-  background-color: #00000096;
+  background-color: #000000da;
   border: 1px solid #00000036;
   color: #fff;
   font-size: 1.2em;
@@ -314,24 +343,23 @@ padding: 1rem 0;
   list-style-type: none;
   line-height: 2.2em;
   text-align: right;
+  padding-right: 3rem;
 }
 
 footer{
-  background-image: url(..//Images/meetings-bg.jpg);
+  background-image: url("/Images/meetings-bg.jpg");
   padding: 5rem;
   padding-bottom: 1.5rem;
-color: #fff;
-align-items: center;
-background-attachment: fixed;
+  color: #fff;
+  align-items: center;
+  background-attachment: fixed;
 }
 
 footer a{
-  color: #bfbfbf;
+  color: #ffffff;
   text-decoration: none;
 }
-footer a:hover{
-  color: rgb(0, 185, 0);
-}
+
 
 .combine-foot{
   display: flex;
@@ -339,25 +367,25 @@ footer a:hover{
   justify-content: space-between;
 }
 
-footer h1{
-  padding-bottom: 2rem;
-}
-footer .our{
- line-height: 1.7rem;
-}
-footer .quick,.community{
-  line-height: 2.5rem;
-  
-}
 
 footer li{
   list-style-type: none;
   
 }
-.follow{
+.social{
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 1rem;
+}
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a:hover{
+  color: rgb(127, 127, 246);
 }
 
 @media screen and (max-width:900px) {
@@ -368,6 +396,9 @@ footer li{
   }
   .first-page img{
     width: 100%;
+  }
+  .hero-sect1{
+    text-align: center;
   }
   .collect{
     flex-direction: column;
