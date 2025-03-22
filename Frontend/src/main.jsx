@@ -10,9 +10,14 @@ import ServicePage from "./pages/servicePage";
 import ContactPage from "./pages/contactPage";
 import AboutPage from "./pages/about";
 import Project from "./pages/project";
+import { Analytics } from "@vercel/analytics/react";
+
+import UsePageView from "./Components/pageView";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
+      <UsePageView />
+      <Analytics debug={false} />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

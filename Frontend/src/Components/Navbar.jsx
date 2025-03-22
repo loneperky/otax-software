@@ -13,7 +13,7 @@ function Navbar(){
         <>
     <nav>
       <div className="logo">
-         <h1>OTAXY</h1>
+         <h1>otax<span>Software</span></h1>
        
      </div>
          <ul className='menu-items'>

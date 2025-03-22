@@ -196,7 +196,7 @@ function HomePage() {
         </div>
         </div>
         
-        <p>Copyrights &copy; 2025 OTAXY. Buld by Chris Tech</p>
+        <p>Copyrights &copy; 2025 <b><a href="/">otax software.</a></b> Buld by Chris Tech</p>
       </footer>
     </>
   );

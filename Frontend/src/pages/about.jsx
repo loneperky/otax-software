@@ -1,7 +1,7 @@
 import { Choose } from "./construct";
 import "../styles/about.css";
 import { useState,useEffect } from "react";
-import { Link,NavLink } from "react-router-dom";
+import React from "react";
 import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
 
 
@@ -126,7 +126,7 @@ useEffect(()=>{
         </div>
         </div>
         
-        <p>Copyrights &copy; 2025 OTAXY. Buld by Chris Tech</p>
+        <p>Copyrights &copy; 2025 <b><a href="/">otax software.</a></b> Buld by Chris Tech</p>
       </footer>
     </>
   );

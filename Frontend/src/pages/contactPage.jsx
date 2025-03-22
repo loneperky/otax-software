@@ -10,6 +10,7 @@ import {
   FaTiktok,
   FaTwitter,
   FaEnvelope,
+  FaLinkedin
 } from "react-icons/fa";
 
 
@@ -85,10 +86,12 @@ function ContactPage() {
                 <h3>Social Media</h3>
                 <p>Connect with us</p>
                 <div className="logg">
+                  <a href=""></a>
                   <FaFacebook style={{cursor:'pointer'}}/>
                   <FaInstagram  style={{cursor:'pointer'}}/>
-                  <FaTiktok  style={{cursor:'pointer'}}/>
                   <FaTwitter  style={{cursor:'pointer'}}/>
+                  <FaLinkedin  style={{cursor:'pointer'}}/>
+                 
                 </div>
               </div>
             </div>
