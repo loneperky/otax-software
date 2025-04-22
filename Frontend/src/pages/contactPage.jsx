@@ -87,10 +87,10 @@ function ContactPage() {
                 <p>Connect with us</p>
                 <div className="logg">
                   <a href=""></a>
-                  <FaFacebook style={{cursor:'pointer'}}/>
-                  <FaInstagram  style={{cursor:'pointer'}}/>
-                  <FaTwitter  style={{cursor:'pointer'}}/>
-                  <FaLinkedin  style={{cursor:'pointer'}}/>
+                  <FaFacebook style={{cursor:'pointer',fontSize:'1.7em'}}/>
+                  <FaInstagram  style={{cursor:'pointer',fontSize:'1.7em'}}/>
+                  <FaTwitter  style={{cursor:'pointer',fontSize:'1.7em'}}/>
+                  <FaLinkedin  style={{cursor:'pointer',fontSize:'1.7em'}}/>
                  
                 </div>
               </div>

@@ -2,26 +2,34 @@ import Product from "./construct";
 import { Test } from "./construct";
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useId, useState } from "react";
-import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
-
+import Footer from "../Components/footer";
 import "../styles/app.css";
 
 function HomePage() {
+  const Duty = [
+    "Web Design",
+    "Branding",
+    "API DEV",
+    "PRODUCT DESIGN",
+    "UI/UX DESIGN",
+  ];
   const [myWork, setWork] = useState("Web Design");
-  const [email,setEmail] = useState("")
+  const [email, setEmail] = useState("");
+  const random = Math.floor(Math.random() * Duty.length);
 
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
+    const SetDuty = () => {
+      setWork(Duty[random]);
+    };
+    
+    SetDuty()
+  }, []);
 
   return (
     <>
-      {/* <div className="quote-coll">
-        <p className="qu">Welc ome to Otax technologies</p>
-      </div> */}
-
-
-
       <div className="first-page">
         <div className="hero-section1">
           <div className="intro">
@@ -34,14 +42,13 @@ function HomePage() {
           </div>
 
           <div className="hero-sect2">
-           
             <div className="collect">
               <input
                 type="email"
                 className="email"
                 value={email}
-                onChange={(e)=> setEmail(e.target.value)}
-                placeholder="Enter your email address"
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your message"
               />
               <button className="btn">Message Us</button>
             </div>
@@ -139,65 +146,45 @@ function HomePage() {
           />
         </div>
       </div>
-<div className="cobi">
-<div className="succeed-test">
-        <div className="succed-big">
-          <div className="succeed">
-            <p className="intro">💖 Real results from real clients</p>
-            <h1>See how we've helped our clients succeed</h1>
-            <h3>More than 1500+ agencies using OTAXY</h3>
+      <div className="cobi">
+        <div className="succeed-test">
+          <div className="succed-big">
+            <div className="succeed">
+              <p className="intro">💖 Real results from real clients</p>
+              <h1>See how we've helped our clients succeed</h1>
+              <h3>More than 1500+ agencies using OTAXY</h3>
+            </div>
+          </div>
+
+          <div className="testimony-hero">
+            <img src="/Images/meet(2).jpg" alt="" />
           </div>
         </div>
 
-        <div className="testimony-hero">
-          <img src="/Images/meet(2).jpg" alt="" />
-        </div>
-      </div>
+        <div className="email-collect">
+          <div className="news">
+            <p className="intro">Connect with us 🛹</p>
+            <h1>Let's talk about your digital agency goals</h1>
 
-      <div className="email-collect">
-        <div className="news">
-          <p className="intro">Connect with us 🛹</p>
-           <h1>Let's talk about your digital agency goals</h1>
-
-          <div className="connect">
-            <input
-              type="text"
-              className=""
-              placeholder="Your email address"
-            />
-            <button className="">Message Us</button>
+            <div className="connect">
+              <input
+                type="text"
+                className=""
+                placeholder="Your email address"
+              />
+              <button className="">Message Us</button>
+            </div>
           </div>
-        </div>
 
-        <ul className="numb">
-          <li>Call on: 09126785031 </li>
-          <li>Time: 9am to 5pm (Sunday close)</li>
-          <li>Email: christianotasowie575@gmail.com</li>
-        </ul>
+          <ul className="numb">
+            <li>Call on: 09126785031 </li>
+            <li>Time: 9am to 5pm (Sunday close)</li>
+            <li>Email: christianotasowie575@gmail.com</li>
+          </ul>
+        </div>
       </div>
-</div>
-     
 
-
-      <footer>
-        <div className="follow">
-          <div className="social">
-            <a href="https://www.facebook.com/profile.php?id=61573047594370">
-            <FaFacebook style={{width:"",fill:"",color:"",border:"blue"}}/>
-            </a>
-          <a href="https://www.linkedin.com/in/christian-otasowie-074820355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-          <FaLinkedinIn style={{width:"",fill:"lightblue",color:"white"}}/>
-          </a>
-
-        <a href="https://x.com/xristen_ot?t=TnsVUcJcgQSPk5vp_EvSIw&s=09">
-          <FaTwitter style={{width:"",fill:"lightblue",color:"white"}}/>
-        </a>
-
-        </div>
-        </div>
-        
-        <p>Copyrights &copy; 2025 <b><a href="/">otax software.</a></b> Buld by Chris Tech</p>
-      </footer>
+      <Footer />
     </>
   );
 }

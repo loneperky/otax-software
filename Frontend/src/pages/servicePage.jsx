@@ -1,7 +1,6 @@
 import Product from "./construct";
 import "../styles/serve.css";
-import { NavLink, Link } from "react-router-dom";
-import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
+import Footer from "../Components/footer";
 
 function ServicePage() {
   return (
@@ -49,6 +48,8 @@ function ServicePage() {
                 <li>PYTHON</li>
                 <li>NODEJS</li>
                 <li>POSTGRESQL</li>
+                <li>MONGODB</li>
+                <li>JAVA</li>
               </ul>
 
               <h3>Top Frameworks</h3>
@@ -116,26 +117,10 @@ function ServicePage() {
       </div>
 
       <hr />
-       
-      <footer>
-        <div className="follow">
-          <div className="social">
-            <a href="https://www.facebook.com/profile.php?id=61573047594370">
-            <FaFacebook style={{width:"",fill:"",color:"",border:"blue"}}/>
-            </a>
-          <a href="https://www.linkedin.com/in/christian-otasowie-074820355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-          <FaLinkedinIn style={{width:"",fill:"lightblue",color:"white"}}/>
-          </a>
-
-        <a href="https://x.com/xristen_ot?t=TnsVUcJcgQSPk5vp_EvSIw&s=09">
-          <FaTwitter style={{width:"",fill:"lightblue",color:"white"}}/>
-        </a>
-
-        </div>
-        </div>
-        
-        <p>Copyrights &copy; 2025 <b><a href="/">otax software.</a></b> Buld by Chris Tech</p>
-      </footer>   </>
+      
+       <Footer />
+      
+        </>
   );
 }
 

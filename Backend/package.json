@@ -1,16 +1,27 @@
 {
-  "name": "otax",
+  "name": "courier",
   "version": "1.0.0",
-  "description": "Creating a backend for my portfolio website",
-  "main": "index.js",
+  "description": "",
+  "main": "server/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server/server.js"
   },
-  "author": "Chrysten",
+  "author": "otax-software",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.15",
     "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }

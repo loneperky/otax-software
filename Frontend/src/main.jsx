@@ -10,6 +10,7 @@ import ServicePage from "./pages/servicePage";
 import ContactPage from "./pages/contactPage";
 import AboutPage from "./pages/about";
 import Project from "./pages/project";
+import ErrorPage from "./pages/errorPage";
 import { Analytics } from "@vercel/analytics/react";
 
 import UsePageView from "./Components/pageView";
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </Router>
   </React.StrictMode>

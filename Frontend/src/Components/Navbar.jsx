@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { NavLink,Link } from 'react-router-dom'
 import { Drop } from '../pages/construct'
 
@@ -9,12 +9,19 @@ function Navbar(){
    function Menu(){
       setShow(!Show)
    }
+
+   useEffect(()=>{
+      const handleScroll = () =>{
+        setShow(false)
+      }
+      window.addEventListener("scroll",handleScroll)
+     },[])
+
     return(
         <>
     <nav>
       <div className="logo">
          <h1>otax<span>Software</span></h1>
-       
      </div>
          <ul className='menu-items'>
             <li>

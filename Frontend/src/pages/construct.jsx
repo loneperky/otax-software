@@ -7,7 +7,12 @@ function Product(props){
      <h2>{props.head}</h2>
       <p>{props.talk}</p>
      
-      <p className="know"><NavLink to="">Know more</NavLink></p>
+      <p className="know">  <a
+                  href="https://wa.me/2349126785031?text=I%20Want%20to%20Hire%20Your%20Services"
+                  target="_blank"
+                >
+                  Know more
+                </a></p>
     </div>
     </>
   )

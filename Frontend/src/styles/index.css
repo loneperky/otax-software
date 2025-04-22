@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+.error{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.error h1{
+  font-size: 5em;
+}
+
 /* Nav Menu Component*/
 .logo{
   display: flex;

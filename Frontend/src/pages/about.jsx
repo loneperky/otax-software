@@ -2,7 +2,8 @@ import { Choose } from "./construct";
 import "../styles/about.css";
 import { useState,useEffect } from "react";
 import React from "react";
-import {FaFacebook,FaLinkedinIn,FaTwitter} from 'react-icons/fa'
+import Footer from "../Components/footer";
+
 
 
 function AboutPage() {
@@ -15,15 +16,6 @@ useEffect(()=>{
   return (
     <>
       <div className="overviews">
-        <div className="hoab">
-          <h3>
-            <a href="/">Home</a>
-          </h3>
-          <h3>.</h3>
-          <h3>
-            <a href="/about">About Us</a>
-          </h3>
-        </div>
 
         <div className="abo">
           <h1>About Us</h1>
@@ -109,25 +101,7 @@ useEffect(()=>{
       </div>
       
        
-      <footer>
-        <div className="follow">
-          <div className="social">
-            <a href="https://www.facebook.com/profile.php?id=61573047594370">
-            <FaFacebook style={{width:"",fill:"",color:"",border:"blue"}}/>
-            </a>
-          <a href="https://www.linkedin.com/in/christian-otasowie-074820355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-          <FaLinkedinIn style={{width:"",fill:"lightblue",color:"white"}}/>
-          </a>
-
-        <a href="https://x.com/xristen_ot?t=TnsVUcJcgQSPk5vp_EvSIw&s=09">
-          <FaTwitter style={{width:"",fill:"lightblue",color:"white"}}/>
-        </a>
-
-        </div>
-        </div>
-        
-        <p>Copyrights &copy; 2025 <b><a href="/">otax software.</a></b> Buld by Chris Tech</p>
-      </footer>
+      <Footer />
     </>
   );
 }
